@@ -1,0 +1,5 @@
+//First command
+$1 = New-WinUserLanguageList en-US
+
+//Second command
+Set-WinUserLanguageList $1
