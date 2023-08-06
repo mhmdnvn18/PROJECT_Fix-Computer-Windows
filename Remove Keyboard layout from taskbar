@@ -1,3 +1,5 @@
+//At first, open powershell on the windows with 'Run as Administrator' and then place the command
+
 //First command
 $1 = New-WinUserLanguageList en-US
 
