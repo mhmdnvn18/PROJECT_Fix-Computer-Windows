@@ -1,0 +1,41 @@
+1. right click on CMD and "RUN AS ADMINISTRATOR"
+2. diskpart
+3. list disk
+4. select disk 
+5. list partition
+6. select partiton
+7. delete partition override
+
+EXAMPLE :
+
+C:\Windows\System32>diskpart
+
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online          476 GB  2048 KB        *
+  Disk 1    Online           28 GB    28 GB        *
+
+DISKPART> select disk 1
+
+Disk 1 is now the selected disk.
+
+DISKPART> list partition
+
+  Partition ###  Type              Size     Offset
+  -------------  ----------------  -------  -------
+  Partition 11   Unknown             512 B    32 KB
+  Partition 6    Unknown             512 B    32 KB
+  Partition 7    Unknown             512 B    33 KB
+  Partition 9    Unknown             512 B    33 KB
+  Partition 10   Unknown             512 B    34 KB
+  Partition 12   System              64 MB   178 MB
+
+DISKPART> select partition 12
+
+Partition 12 is now the selected partition.
+
+DISKPART> delete partition override
+
+DiskPart successfully deleted the selected partition.
