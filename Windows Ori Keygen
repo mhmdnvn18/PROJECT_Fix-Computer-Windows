@@ -1,0 +1,3 @@
+C:\Users\hp>wmic path softwarelicensingservice get OA3xOriginalProductKey
+ OA3xOriginalProductKey
+ FRCVN-XWY4D-HJW84-CKQFB-YWRBP
